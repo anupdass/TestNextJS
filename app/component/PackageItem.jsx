@@ -3,7 +3,8 @@ const PackageItem = ({ item }) => {
     const { name, speed, dtheader, details, price, bg } = item
     return (
 
-        <div className={`md:w-[30%] w-full mt-10 bg-[#ffffff] border rounded-lg hover:shadow-md hover:scale-105 duration-300 cursor-pointer  p-6 ${bg ? bg : ''}`}>
+        <div className={`md:w-[30%] w-full mt-10 bg-[#ffffff] border rounded-lg hover:shadow-md hover:scale-105 duration-300 cursor-pointer  p-6 ${bg ? bg : ''}`} data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"  >
             <p className='uppercase text-xl'>{name}</p>
             <p><span className='text-6xl font-bold'>{speed}</span> <span className='font-bold'>MBPS</span></p>
             <p className=' font-semibold py-3'>{dtheader}</p>

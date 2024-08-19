@@ -1,14 +1,26 @@
+'use client'
 import Image from "next/image"
 import { IoIosWifi } from "react-icons/io";
 import { IoLockClosed } from "react-icons/io5";
 import { GiNetworkBars } from "react-icons/gi";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const About = () => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 500
+        });
+    }, []);
+
     return (
-        <div className="custom-container" id="about">
+        <div className="custom-container" id="about" >
             <p className="text-4xl font-bold text-center text-green-600 pb-16 pt-16">About Us</p>
 
-            <div className=" md:grid grid-cols-2 items-center">
+            <div className=" md:grid grid-cols-2 items-center" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" >
                 <div className="px-6 ">
                     <Image src="/image1.jpg" alt="logo" width={600} height={600} priority={true} className="rounded-md" />
                 </div>
@@ -20,7 +32,10 @@ const About = () => {
                         concern of ADN Group, a conglomerate comprising 10 companies across diverse industries
                     </p>
 
-                    <div className="py-3 flex items-center gap-6">
+                    <div className="py-3 flex items-center gap-6"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                    >
                         <div className="bg-green-600 p-3 rounded-full shadow-lg hover:bg-green-800">
                             <IoIosWifi size={40} color="white" />
                         </div>
@@ -30,7 +45,10 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="py-3 flex items-center gap-6">
+                    <div className="py-3 flex items-center gap-6"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                    >
                         <div className="bg-green-600 p-3 rounded-full shadow-lg hover:bg-green-800">
                             <IoLockClosed size={40} color="white" />
                         </div>
@@ -40,7 +58,10 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="py-3 flex items-center gap-6">
+                    <div className="py-3 flex items-center gap-6"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                    >
                         <div className="bg-green-600 p-3 rounded-full shadow-lg hover:bg-green-800">
                             <GiNetworkBars size={40} color="white" />
                         </div>

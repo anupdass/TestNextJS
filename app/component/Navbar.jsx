@@ -34,7 +34,7 @@ const Navbar = () => {
 
             <nav className='flex justify-between custom-container py-1'>
                 <Link href="#home" className='px-3 md:px-0'>
-                    <Image src="/udoyLogo.png" alt="logo" width={150} height={150} priority={true} onClick={() => setCurrentHash('Home')} />
+                    <Image src="/logo.png" alt="logo" width={150} height={150} priority={true} onClick={() => setCurrentHash('Home')} />
                 </Link>
                 <div className='hidden md:block'>
                     <div className='flex gap-14'>

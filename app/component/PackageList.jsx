@@ -1,8 +1,9 @@
 'use client'
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { pacageList } from "../data/packageList"
 import PackageItem from "./PackageItem"
-
+import Aos from "aos"
+import "aos/dist/aos.css";
 const PackageList = () => {
     const [showPackage, setShowPackage] = useState(6)
     const handleShowPackage = (cotent) => {
@@ -12,6 +13,14 @@ const PackageList = () => {
             setShowPackage(6)
         }
     }
+
+    useEffect(() => {
+        Aos.init({
+            // once: true,
+            duration: 500
+        });
+    }, []);
+
     return (
         <div className="bg-gradient-to-t from-green-100 via-green-100 to-white px-6 md:px-0 mt-16" id='packages'>
             <div className="custom-container pb-10">
