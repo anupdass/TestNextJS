@@ -1,14 +1,16 @@
 import Image from "next/image";
 import React from 'react'
+import { CarouselCustomNavigation } from "./HeroSection2";
 
 const HeroSection = () => {
     return (
-        <div className="bg-gradient-to-t from-green-200 via-green-100 to-white  w-full md:h-[600px] py-10 md:p-0"
+        <div className="bg-gradient-to-t from-green-200 via-green-100 to-white  w-full md:h-[85vh]"
             id="home"
         >
 
-            <div className="custom-container grid md:grid-cols-2 content-center h-full">
-                <div className="p-6">
+
+            <div className="h-full">
+                {/* <div className="p-6">
                     <Image
                         src="/image1.jpeg"
                         alt="logo"
@@ -18,6 +20,7 @@ const HeroSection = () => {
                         quality={100}
                         priority={true}
                     />
+
                 </div>
                 <div className="p-6 text-end">
                     <Image
@@ -29,7 +32,8 @@ const HeroSection = () => {
                         quality={100}
                         priority={true}
                     />
-                </div>
+                </div> */}
+                <CarouselCustomNavigation />
             </div>
         </div>
     )

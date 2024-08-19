@@ -2,6 +2,8 @@ import Image from "next/image"
 import { navData } from "../data/navdata"
 import Link from "next/link"
 
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 const Footer = () => {
     return (
         <div className="custom-container">
@@ -36,10 +38,20 @@ const Footer = () => {
 
                 <div className="col-span-1 mt-5 md:mt-0 px-5">
                     <p className="font-bold mb-3 border-b-4 rounded-sm border-b-green-400 inline-block">Follow Us</p>
-                    <ul>
-                        <li className="py-3">Facebook</li>
-                        <li className="py-3">Twitter</li>
-                        <li className="py-3">Instagram</li>
+                    <ul className="flex gap-3 items-center">
+                        <li className="py-3 bg-green-600 p-3 rounded-full hover:bg-green-900">
+                            <a href="https://www.facebook.com/UdoyADN/" target="_blank"  > <FaFacebook size={30} color="white" /></a>
+                        </li>
+                        <li className="py-3  bg-green-600 p-3 rounded-full hover:bg-green-900 ">
+                            <a href="#" target="_blank">  <FaTwitter size={30} color="white" /></a>
+                        </li>
+                        <li className="py-3  bg-green-600 p-3 rounded-full hover:bg-green-900">
+                            <a href="#" target="_blank"><FaInstagram size={30} color="white" /></a>
+                        </li>
+                        <li className="py-3  bg-green-600 p-3 rounded-full hover:bg-green-900">
+                            <a href="https://www.linkedin.com/company/udoy/mycompany/" target="_blank">
+                                <FaLinkedin size={30} color="white" /></a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+
 import { contact } from "../data/contact"
 
 const ContactUs = () => {
@@ -27,10 +28,19 @@ export default ContactUs
 
 
 const Contact = ({ item }) => {
+    const { title, Icon, color } = item
     return (
-        <div className="p-6 bg-white hover:shadow-md shadow-sm m-3 md:w-[45%] w-full rounded-md cursor-pointer" key={item.id}>
-            <p className="text-sm text-start font-semibold pl-4">{item.title}</p>
-            <p>{item.icon}</p>
-        </div>
+        <a href={item.link}
+            className="p-6 bg-white
+         hover:shadow-md shadow-sm m-3 md:w-[45%] 
+         w-full rounded-md cursor-pointer flex items-center"
+            key={item.id}
+        >
+            {Icon && <Icon color={color} size={25} />}
+            <div>
+                <p className="text-sm text-start font-semibold pl-4">{item.title}</p>
+                <p>{item.icon}</p>
+            </div>
+        </a>
     )
 }

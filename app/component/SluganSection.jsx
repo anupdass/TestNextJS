@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { sluganData } from "../data/sluganData"
+import { sluganData, } from "../data/sluganData"
 
 const SluganSection = () => {
     return (
@@ -20,7 +20,7 @@ const SluganSection = () => {
                     }
                 </div>
                 <div className="px-6 mt-8 md:mt-0">
-                    <Image src="/image1.jpeg" alt="logo" width={600} height={600} priority={true} />
+                    <Image src="/udoy1.gif" alt="logo" width={600} height={600} priority={true} className="rounded-md" />
                 </div>
             </div>
 
@@ -33,11 +33,24 @@ export default SluganSection
 
 
 const Slug = ({ item }) => {
-    const { heading, details } = item
+    const { heading, details, Icon, color } = item
     return (
-        <div className="p-6 bg-black text-white m-5 rounded-md hover:scale-105 transition-all duration-300 cursor-pointer">
-            <p className="text-2xl font-semibold py-3" key={item.id}>{heading}</p>
-            <p className="text-sm">{details}</p>
+        // <div className="p-6 bg-black text-white m-5 rounded-md hover:scale-105 transition-all duration-300 cursor-pointer">
+        //     {/* <Icon /> */}
+        //     <p className="text-2xl font-semibold py-3" key={item.id}>{heading}</p>
+        //     <p className="text-sm">{details}</p>
+        // </div>
+
+
+        <div className="p-6 bg-black text-white m-5 rounded-md hover:scale-105 transition-all duration-300 cursor-pointer flex items-center gap-6"        >
+            <div className="bg-gray-400 p-6 rounded-full text-center md:block hidden">
+                {Icon && <Icon color={color} size={40} />}
+            </div>
+            <div>
+                <p className="text-xl font-semibold py-3" key={item.id}>{heading}</p>
+                <p className="text-sm">{details}</p>
+            </div>
         </div>
+
     )
 }

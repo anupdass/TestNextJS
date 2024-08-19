@@ -40,20 +40,24 @@ export function DropdownMenu({ openNav, handleOpenNav }) {
                         }
                         <div>
 
-                            <button
+                            <a
+                                href='https://payment.udoyadn.com/'
+                                target='_blank'
                                 className='px-4 py-2 bg-[#1c9a72] 
                     rounded-md text-white hover:bg-[#2cbc8f]
                     hover:scale-105 transition-all duration-300 mr-5 md:mr-0'
                             >
                                 Pay-Bill
-                            </button>
-                            <button
+                            </a>
+                            <a
+                                href='https://selfcare.udoyadn.com/Home/Login?ReturnUrl=%2F'
+                                target='_blank'
                                 className='px-4 py-2 bg-[#1c9a72] 
                     rounded-md text-white hover:bg-[#2cbc8f]
                     hover:scale-105 transition-all duration-300 mr-5 md:mr-0'
                             >
                                 Self-Care
-                            </button>
+                            </a>
                         </div>
                     </div>
                     :
