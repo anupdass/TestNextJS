@@ -4,7 +4,7 @@ import { CarouselCustomNavigation } from "./HeroSection2";
 
 const HeroSection = () => {
     return (
-        <div className="bg-gradient-to-t from-green-200 via-green-100 to-white  w-full md:h-[85vh]"
+        <div className="bg-gradient-to-t from-green-200 via-green-100 to-white  w-full md:h-[85vh] h-52 "
             id="home"
         >
 

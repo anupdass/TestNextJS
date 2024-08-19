@@ -5,7 +5,7 @@ const ContactUs = () => {
     return (
         <div className="bg-gradient-to-t from-green-100 via-green-100 to-white" id="contact">
             <div className="custom-container py-14 text-center md:max-w-4xl">
-                <p className="text-4xl font-bold py-4 uppercase">Contact Team Udoy</p>
+                <p className="text-4xl font-bold p-4 uppercase">Contact Team Udoy</p>
                 <p className="md:px-44 px-6"> We try and sort out any issues before you’re even aware of them. But if you ever need us,
                     there are a bunch of ways you can get in touch.
                 </p>
